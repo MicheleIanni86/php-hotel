@@ -11,18 +11,26 @@
 </head>
 <body>
 
-    <ul>
+<table class="container table table-success table-striped mt-5 text-center">
+<thead>
+    <tr>
+      <th scope="col">Nome Hotel</th>
+      <th scope="col">Descrizione</th>
+      <th scope="col">Voto</th>
+      <th scope="col">Dist. dal Centro</th>
+    </tr>
+  </thead>
+  <tbody>
+      <?php foreach($hotels as $hotel): ?>
+      <tr>
+        <td><?= $hotel['name'] ?></td>
+        <td><?= $hotel['description'] ?></td>
+        <td><?= $hotel['vote'] ?></td>
+        <td><?= $hotel['distance_to_center'] ?></td>
+    </tr>
+    <?php endforeach; ?>
+</tbody>
 
-        <?php foreach($hotels as $hotel): ?>
-            <li>
-                <?= $hotel['name'] ?>
-                <?= $hotel['description'] ?>
-                <?= $hotel['parking'] ?>
-                <?= $hotel['vote'] ?>
-                <?= $hotel['distance_to_center'] ?>
-            </li>
-        <?php endforeach; ?>
-    </ul>
 
 </body>
 </html>
