@@ -39,4 +39,19 @@
         ],
 
     ];
+
+    // $form_sent = !empty($_GET);
+
+
+    // if ($form_sent) {
+    //     $parking_filter  = $_GET['hotel-parking'] ?? '' && $vote_filter  = $_GET['hotel-vote'] ?? '';
+
+    //     $hotel_filter = [];
+
+    //     foreach ($hotels as $hotel) {
+    //         if (
+    //             $parking_filter[value]
+    //         )
+    //     }
+    // }
 ?>

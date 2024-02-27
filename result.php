@@ -13,15 +13,15 @@
     <div class="container d-flex">
 
         <form method="GET" class="container text-center mt-5">
-            <select class="form-select">
+            <select class="form-select" name="hotel-parking">
             <option selected>Cerchi Hotel con Parcheggio?</option>
             <option value="si">Si</option>
             <option value="no">No</option>
             </select>
         </form>
         <form method="GET" class="container text-center mt-5">
-            <label for="hotel-with-parking" class="form-label">Inserisci il voto dell'hotel </label>
-            <input type="text" name="hotel-with-parking" id="hotel-with-parking">
+            <label for="hotel-vote" class="form-label">Inserisci il voto dell'hotel </label>
+            <input type="text" name="hotel-vote" id="hotel-vote">
             <button>Cerca</button>
         </form>
     </div>
