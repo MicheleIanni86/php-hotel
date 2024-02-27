@@ -17,6 +17,7 @@
       <th scope="col">Nome Hotel</th>
       <th scope="col">Descrizione</th>
       <th scope="col">Voto</th>
+      <th scope="col">Parcheggio</th>
       <th scope="col">Dist. dal Centro</th>
     </tr>
   </thead>
@@ -26,6 +27,7 @@
         <td><?= $hotel['name'] ?></td>
         <td><?= $hotel['description'] ?></td>
         <td><?= $hotel['vote'] ?></td>
+        <td><?php echo $hotel['parking'] ? "Si" : "No" ?></td>
         <td><?= $hotel['distance_to_center'] ?></td>
     </tr>
     <?php endforeach; ?>
