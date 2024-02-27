@@ -40,7 +40,17 @@
 
     ];
 
+    // filtro per parcheggio
+    $parking_filter  = isset($_GET['check-parking']) ? true : false;
+  if ($parking_filter) {
+    $hotels = array_filter($hotels, fn($hotel) => $hotel['parking']);
+  }
+
+    // filtro per voto
+    // $vote_filter  = $_GET['hotel-vote'];
+
     // $form_sent = !empty($_GET);
+
 
 
     // if ($form_sent) {
@@ -52,6 +62,8 @@
     //         if (
     //             $parking_filter[value]
     //         )
-    //     }
+    //     },
     // }
 ?>
+
+
