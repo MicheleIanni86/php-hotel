@@ -10,6 +10,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <div class="container d-flex">
+
+        <form method="GET" class="container text-center mt-5">
+            <select class="form-select">
+            <option selected>Cerchi Hotel con Parcheggio?</option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+            </select>
+        </form>
+        <form method="GET" class="container text-center mt-5">
+            <label for="hotel-with-parking" class="form-label">Inserisci il voto dell'hotel </label>
+            <input type="text" name="hotel-with-parking" id="hotel-with-parking">
+            <button>Cerca</button>
+        </form>
+    </div>
 
 <table class="container table table-success table-striped mt-5 text-center">
 <thead>
@@ -28,7 +43,7 @@
         <td><?= $hotel['description'] ?></td>
         <td><?= $hotel['vote'] ?></td>
         <td><?php echo $hotel['parking'] ? "Si" : "No" ?></td>
-        <td><?= $hotel['distance_to_center'] ?></td>
+        <td><?= $hotel['distance_to_center'] ?>  Km</td>
     </tr>
     <?php endforeach; ?>
 </tbody>
